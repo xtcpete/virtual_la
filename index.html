@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DGS Interactive Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<div class="container mx-auto px-6 py-10">
+    <!-- Header Section -->
+    <div class="text-center mb-10 bg-indigo-100 py-6 rounded-lg">
+        <h1 class="text-4xl font-bold text-gray-800 mt-6">[Project Title Placeholder]</h1>
+        <p class="text-lg font-medium text-gray-700 mt-4">
+            <a href="https://wbteng9526.github.io/" target="_blank" class="text-indigo-600 hover:underline">Wenbin Teng</a>, 
+            <a href="https://xtcpete.com" target="_blank" class="text-indigo-600 hover:underline">Gonglin Chen</a>, 
+            <a href="https://scholar.google.com/citations?user=LVWRssoAAAAJ&hl=en" target="_blank" class="text-indigo-600 hover:underline">Haiwei Chen</a>,
+            <a href="https://ict.usc.edu/about-us/leadership/research-leadership/yajie-zhao/" target="_blank" class="text-indigo-600 hover:underline">Yajie Zhao</a>
+        </p>
+        <p class="text-lg text-gray-600 mt-4 mb-4">Real-time photorealistic exploration and customization of Los Angeles landmarks using 3GGS technology.</p>
+    </div>
+
+    <!-- Video Demonstration Section -->
+    <div class="mb-12">
+        <div class="aspect-video bg-gray-300 rounded-lg flex items-center justify-center">
+            <span class="material-icons text-gray-500" style="font-size:48px;">play_circle_outline</span>
+        </div>
+        <p class="text-gray-500 text-sm mt-2">[Video Placeholder: Live demo navigating landmarks]</p>
+    </div>
+
+    <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">How It Works</h2>
+        <p class="text-gray-600 mb-4">
+            Data collection is performed using a multi-device setup involving 360-degree cameras, DJI Osmo Pockets, and DJI drones. This hybrid approach ensures complete spatial coverage: 360 cameras capture panoramic ground-level views, DJI Osmo pockets record smooth video trajectories, and drones provide comprehensive aerial data.
+        </p>
+        <p class="text-gray-600 mb-4">
+            These inputs are processed using state-of-the-art feature matching and structure-from-motion (SfM) techniques for accurate camera calibration and alignment, which form the backbone of high-fidelity 3D scene reconstruction.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-gray-300 rounded-lg flex items-center justify-center">
+                <img src="./public/data_collection.png" alt="3DGS Diffusion Model" class="rounded-lg object-cover">
+            </div>
+            <div class="bg-white rounded-lg flex items-center justify-center">
+                <img src="./public/sfm_3dgs.png" alt="3DGS Diffusion Model" class="rounded-lg object-cover">
+            </div>
+        </div>
+        <p class="text-gray-500 text-sm mt-2">Left: Devices Used for Data Collection; Right: Accurate 3D reconstruction and photorealistic renderings.</p>
+    </div>
+
+    <!-- Rendering Technology -->
+    <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Rendering Technology</h2>
+        <p class="text-gray-600 mb-4">
+            At the core of our real-time innovation is the adoption of 3D Gaussian Splatting (3DGS) and its integration with generative models. This combination offers speed and visual fidelity far beyond traditional rendering methods.
+        </p>
+        <p class="text-gray-600 mb-4">
+            To support free-form exploration, we are integrating diffusion-based view synthesis models that generate plausible novel views, overcoming the limitations of fixed-camera data capture and enabling users to roam dynamically within the virtual environment.
+        </p>
+        <div class="bg-gray-300 rounded-lg flex items-center justify-center">
+            <img src="./public/3dgs_diffusion.png" alt="3DGS Diffusion Model" class="rounded-lg object-cover">
+        </div>
+        <p class="text-gray-500 text-sm mt-2">Generative models are able to improve the rendering performance of 3DGS.</p>
+    </div>
+
+    <!-- Platform & User-Generated Content -->
+    <div class="mb-12">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Community Platform</h2>
+        <p class="text-gray-600 mb-4">
+            Our platform allows users to upload their own captured data, contributing to an ever-expanding digital urban environment. Collaborate, share, and discover new perspectives on cities worldwide.
+        </p>
+        <p class="text-gray-600 mb-4">
+            In addition to real-time interaction, the system also serves as a large-scale dataset resource for 3D vision and generative AI research, bridging practical deployment with academic inquiry.
+        </p>
+        <div class="bg-gray-300 rounded-lg h-64 flex items-center justify-center">
+            <span class="material-icons text-gray-500" style="font-size:48px;">cloud_upload</span>
+        </div>
+        <p class="text-gray-500 text-sm mt-2">[Image Placeholder: Platform interface]</p>
+    </div>
+
+    <!-- Future Vision -->
+    <div class="text-center">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">The Future of Urban Exploration</h2>
+        <p class="text-gray-600">
+            We envision expanding this immersive technology globally, redefining how users interact with digital recreations of urban spaces. Stay tuned for exciting updates and innovations.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
